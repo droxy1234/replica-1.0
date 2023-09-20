@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Your Webpage</title>
+    <style>
+        /* Global Styles */
+        * {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #121212;
+        }
+        /* Container */
+        .container {
+            display: flex;
+            background-color: #121212;
+            color: white;
+        }
+        /* Left Side */
+        .left {
+            flex: 0.25;
+            padding: 20px;
+            background-color: #040404;
+        }
+        .logo img {
+            width: 90px;
+            margin-bottom: 20px;
+        }
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        .nav svg {
+            margin-right: 10px;
+        }
+        .nav span {
+            font-weight: bold;
+            padding-top: 12px;
+        }
+        /* Right Side */
+        .right {
+            flex: 0.75;
+            padding: 20px;
+        }
+        .top-genres {
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .genre-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            flex: 0 0 calc(33.3333% - 20px);
+            background-color: #1DB954;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .genre-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        /* Additional Styling for Genre Boxes */
+        .pop-box {
+            background-color: purple;
+            color: white;
+            width: 370px;
+            height: 200px;
+            text-align: left;
+            font-size: xx-large;
+            padding: 20px;
+            display: inline-block;
+        }
+        .hip-hop-box {
+            background-color: orange;
+            color: white;
+            width: 370px;
+            height: 200px;
+            text-align: left;
+            font-size: xx-large;
+            padding: 20px;
+            display: inline-block;
+        }
+        /* Add more genre boxes as needed */
+
+        /* Styling for Podcasts, Made For You, Charts, New Releases */
+        .browse-section {
+            margin-top: 30px;
+        }
+        .browse-category {
+            display: flex;
+            gap: 10px;
+            height: 200px;
+            width: 470px;
+        }
+        .category-box {
+            flex: 0 0 calc(50% - 10px);
+            background-color: #1DB954;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        /* Additional Styling for Categories */
+        .podcast-box {
+            background-color: lightseagreen;
+        }
+        .madeforyou-box {
+            background-color: darkblue;
+        }
+        .chart-box {
+            background-color: rgb(239, 110, 239);
+        }
+        .newrelease-box {
+            background-color: rgb(255, 0, 111);
+        }
+        /* Style for icons in the navigation */
+        .icon {
+            color: white;
+            padding: 10px;
+            padding-top: 0;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="left">
+            <div class="logo">
+                <img src="Spotifylogo.png" alt="Spotify logo" style="height: 40px; width: 130px;">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <svg width="21" height="25" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- SVG content for Home icon -->
+                            <g clip-path="url(#clip0_1895_894)">
+                                <path
+                                    d="M13.5871 17.7441C12.6862 17.7441 11.8222 18.1323 11.1852 18.8233C10.5482 19.5143 10.1903 20.4514 10.1903 21.4286V30.0576H16.9838V21.4286C16.9838 20.4514 16.626 19.5143 15.989 18.8233C15.3519 18.1323 14.488 17.7441 13.5871 17.7441Z"
+                                    fill="white" />
+                                <path
+                                    d="M15.102 1.5735C14.6862 1.16751 14.1465 0.942871 13.5871 0.942871C13.0276 0.942871 12.4879 1.16751 12.0721 1.5735L0 13.3589V26.1317C0 27.174 0.381731 28.1736 1.06122 28.9107C1.7407 29.6477 2.66228 30.0618 3.62322 30.0618H7.92579V21.4291C7.92579 19.8004 8.52225 18.2385 9.58394 17.0869C10.6456 15.9353 12.0856 15.2883 13.5871 15.2883C15.0885 15.2883 16.5285 15.9353 17.5902 17.0869C18.6519 18.2385 19.2484 19.8004 19.2484 21.4291V30.0581H23.5509C24.5119 30.0581 25.4334 29.644 26.1129 28.907C26.7924 28.1699 27.1741 27.1703 27.1741 26.128V13.3552L15.102 1.5735Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1895_894">
+                                    <rect width="27.1741" height="29.4757" fill="white" transform="translate(0 0.550354)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="icon"> Home</span>
+                    </li>
+                    <!-- Add more navigation items if needed -->
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 28 28" fill="none">
+                            <g clip-path="url(#clip0_1895_897)">
+                            <path d="M27.1739 26.1991L20.0837 19.1C21.9255 16.8446 22.831 13.9668 22.613 11.0617C22.395 8.1566 21.0701 5.44654 18.9125 3.49206C16.7548 1.53758 13.9294 0.488228 11.0207 0.561046C8.11201 0.633865 5.34252 1.82329 3.28511 3.88328C1.2277 5.94328 0.0397747 8.71625 -0.0329521 11.6286C-0.105679 14.541 0.942358 17.3699 2.89438 19.5303C4.8464 21.6907 7.55306 23.0172 10.4545 23.2355C13.3559 23.4537 16.2302 22.5471 18.4827 20.703L25.5729 27.8021L27.1739 26.1991ZM11.3223 21C9.53079 21 7.77951 20.4681 6.28992 19.4716C4.80033 18.475 3.63934 17.0585 2.95376 15.4013C2.26818 13.7441 2.0888 11.9205 2.4383 10.1612C2.78781 8.40193 3.65051 6.78591 4.9173 5.51752C6.18409 4.24914 7.79808 3.38536 9.55517 3.03541C11.3123 2.68546 13.1335 2.86507 14.7887 3.55151C16.4438 4.23796 17.8585 5.40041 18.8538 6.89187C19.8491 8.38334 20.3804 10.1368 20.3804 11.9306C20.3777 14.3351 19.4225 16.6404 17.7243 18.3407C16.0262 20.0409 13.7238 20.9973 11.3223 21Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1895_897">
+                            <rect width="27.1741" height="27.2083" fill="white" transform="translate(0 0.592896)"/>
+                            </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="icon">Search</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 26 27" fill="none">
+                            <rect y="0.501709" width="1.13226" height="26.0746" fill="white" />
+                            <rect x="7.92578" y="0.501709" width="1.13226" height="26.0746" fill="white" />
+                            <rect width="1.13249" height="26.8876"
+                                transform="matrix(0.91594 -0.401316 0.40047 0.91631 13.5871 0.956177)" fill="white" />
+                        </svg>
+                        <span class="icon">Your Library</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 34 35" fill="none">
+                            <rect y="0.710083" width="33.9677" height="34.0104" rx="1.13226" fill="white" />
+                            <path
+                                d="M18.1161 16.5817V10.9133H15.8516V16.5817H10.1903V18.8491H15.8516V24.5175H18.1161V18.8491H23.7774V16.5817H18.1161Z"
+                                fill="black" />
+                        </svg>
+                        <span class="icon">Create Playlist</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 34 35" fill="none">
+                            <path
+                                d="M0 1.85272C0 1.22739 0.506928 0.720459 1.13226 0.720459H32.8354C33.4608 0.720459 33.9677 1.22739 33.9677 1.85272V33.5986C33.9677 34.2239 33.4608 34.7309 32.8354 34.7309H1.13226C0.506929 34.7309 0 34.2239 0 33.5986V1.85272Z"
+                                fill="url(#paint0_linear_1895_880)" />
+                            <g clip-path="url(#clip0_1895_880)">
+                                <path
+                                    d="M19.4111 13.3413C18.9489 13.3485 18.4968 13.4777 18.1005 13.7158C17.7041 13.9539 17.3775 14.2925 17.1537 14.6975C16.9298 14.2925 16.6032 13.9539 16.2069 13.7158C15.8105 13.4777 15.3584 13.3485 14.8962 13.3413C14.1595 13.3734 13.4653 13.6961 12.9654 14.2389C12.4655 14.7818 12.2006 15.5007 12.2284 16.2386C12.2284 19.0228 16.7252 22.2386 16.9164 22.375L17.1537 22.5431L17.3909 22.375C17.5822 22.2394 22.079 19.0228 22.079 16.2386C22.1068 15.5007 21.8418 14.7818 21.3419 14.2389C20.842 13.6961 20.1479 13.3734 19.4111 13.3413V13.3413Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_1895_880" x1="0" y1="0.720459" x2="34.0104" y2="34.6881"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4000F4" />
+                                    <stop offset="0.224829" stop-color="#603AED" />
+                                    <stop offset="0.469313" stop-color="#7C6EE6" />
+                                    <stop offset="0.657091" stop-color="#979FE1" />
+                                    <stop offset="0.77684" stop-color="#A2B3DE" />
+                                    <stop offset="0.889332" stop-color="#ADC8DC" />
+                                    <stop offset="1" stop-color="#C0ECD7" />
+                                </linearGradient>
+                                <clipPath id="clip0_1895_880">
+                                    <path
+                                        d="M12.2283 14.0966C12.2283 13.4713 12.7352 12.9644 13.3605 12.9644H20.9466C21.572 12.9644 22.0789 13.4713 22.0789 14.0966V21.6951C22.0789 22.3204 21.572 22.8274 20.9466 22.8274H13.3605C12.7352 22.8274 12.2283 22.3204 12.2283 21.6951V14.0966Z"
+                                        fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="icon">Liked Songs</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 34 35" fill="none">
+                            <rect y="0.730957" width="33.9677" height="34.0104" rx="5.66128" fill="#004638" />
+                            <path
+                                d="M12.4459 25.0193C11.4365 24.0085 10.749 22.7207 10.4705 21.3188C10.192 19.9169 10.3349 18.4637 10.8813 17.1431C11.4276 15.8225 12.3528 14.6938 13.5398 13.8997C14.7268 13.1055 16.1223 12.6817 17.5499 12.6817C18.9776 12.6817 20.3731 13.1055 21.5601 13.8997C22.7471 14.6938 23.6723 15.8225 24.2186 17.1431C24.7649 18.4637 24.9079 19.9169 24.6294 21.3188C24.3509 22.7207 23.6634 24.0085 22.654 25.0193L23.788 26.1547C24.6084 25.3354 25.2591 24.3618 25.7026 23.29C26.146 22.2181 26.3736 21.069 26.3721 19.9088C26.3721 15.0305 22.4222 11.0756 17.5499 11.0756C12.6777 11.0756 8.72778 15.0305 8.72778 19.9088C8.72778 22.3484 9.71506 24.5567 11.3119 26.1547L12.4459 25.0193V25.0193Z"
+                                fill="#159643" />
+                            <path
+                                d="M21.5199 23.8838C22.305 23.0977 22.8397 22.0961 23.0562 21.0057C23.2728 19.9153 23.1616 18.7851 22.7367 17.758C22.3117 16.7309 21.5921 15.853 20.6689 15.2354C19.7457 14.6177 18.6603 14.2881 17.55 14.2881C16.4396 14.2881 15.3542 14.6177 14.431 15.2354C13.5078 15.853 12.7882 16.7309 12.3633 17.758C11.9383 18.7851 11.8271 19.9153 12.0437 21.0057C12.2603 22.0961 12.7949 23.0977 13.58 23.8838L14.7148 22.7483C14.154 22.1868 13.7721 21.4714 13.6173 20.6925C13.4626 19.9137 13.542 19.1064 13.8455 18.3727C14.149 17.639 14.663 17.0119 15.3225 16.5707C15.9819 16.1296 16.7572 15.8941 17.5504 15.8941C18.3435 15.8941 19.1188 16.1296 19.7782 16.5707C20.4377 17.0119 20.9517 17.639 21.2552 18.3727C21.5587 19.1064 21.6381 19.9137 21.4834 20.6925C21.3286 21.4714 20.9467 22.1868 20.3859 22.7483L21.5199 23.8838Z"
+                                fill="#159643" />
+                            <path
+                                d="M19.251 21.612C19.5875 21.2751 19.8166 20.8458 19.9094 20.3785C20.0022 19.9112 19.9545 19.4269 19.7724 18.9867C19.5903 18.5465 19.2819 18.1703 18.8862 17.9056C18.4906 17.6409 18.0254 17.4996 17.5495 17.4996C17.0737 17.4996 16.6085 17.6409 16.2129 17.9056C15.8172 18.1703 15.5088 18.5465 15.3267 18.9867C15.1446 19.4269 15.0969 19.9112 15.1897 20.3785C15.2825 20.8458 15.5116 21.2751 15.8481 21.612L16.9829 20.4766C16.8707 20.3643 16.7943 20.2212 16.7634 20.0654C16.7324 19.9096 16.7483 19.7481 16.809 19.6014C16.8696 19.4547 16.9724 19.3292 17.1043 19.241C17.2362 19.1527 17.3913 19.1056 17.5499 19.1056C17.7086 19.1056 17.8636 19.1527 17.9955 19.241C18.1274 19.3292 18.2302 19.4547 18.2909 19.6014C18.3516 19.7481 18.3675 19.9096 18.3365 20.0654C18.3056 20.2212 18.2292 20.3643 18.117 20.4766L19.251 21.612V21.612Z"
+                                fill="#159643" />
+                        </svg>
+                        <span class="icon">Your Episode</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/> </svg>                        
+                        <span class="icon">Install App</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+            <div class="top-genres">
+                <h2>Your top genres</h2>
+                <div class="genre-box pop-box">
+                    <h3>Pop</h3>
+                </div>
+                <div class="genre-box hip-hop-box">
+                    <h3>Hip-Hop</h3>
+                </div>
+                <!-- Add more genre boxes as needed -->
+            </div>
+            <div class="browse-section">
+                <h2>Browse all</h2>
+                <div class="browse-category">
+                    <div class="category-box podcast-box">
+                        <h3>Podcasts</h3>
+                    </div>
+                    <div class="category-box madeforyou-box">
+                        <h3>Made For You</h3>
+                    </div>
+                    <div class="category-box chart-box">
+                        <h3>Charts</h3>
+                    </div>
+                    <div class="category-box newrelease-box">
+                        <h3>New Releases</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #444;border-top: 2px solid rgb(172, 170, 170);border-bottom: 0; padding: 10px;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAFQAVAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAwQBAgX/2gAIAQEAAAAA8F7o85w65L1U0ecjltEPbhtL5NXF2+Pdst58xdlJFvdnJJ00kqesal+rPGw1zMVxmBuDcWAAFkvIAAMbMNvhSBVKGtV//8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/9oACgICEAMQAAAAqkWa1Jkx1XHsdenzCbRpnpxjPfXCgMdd8ooM9dcor//EAC0QAAICAQMCBAUEAwAAAAAAAAECAxEABBIxIVEQEyJBFCAyUmEjVHGRMJKx/9oACAEBAAE/AMg2maMNW0mjeavTnTyUDaHqrZfgfFVLGh2s+MscCiNtzURdCjzmyA8SsE7let5pJImDRT/Q3QH7Dk8KwqppSvCN7HBPp7Fwnu2O6nqFIN8V0wAsegORQSyvSJffsMeZYQ0UNEn6pMAzYe4yR1bddXWbD8NdcSG/6zRiMtchYKDyMTWCPoL2cFeRjJE0E0yNd2MnmaUQRq6vYA7WfziaJYwJJ5RX2qcm1rNGIolCR/jAt4q9R/OeXF7kf3jEE2MLdABx7/ziyOgIVqvE0zzBijodotiTkKPFoZxuQsHG2jY9WOjonmIybxXFDJA5J4NfkYOtDIomYdFJzyn/AG3/AHPLm/ar/rmkhEsnUWB7YulZw7BG7gDtkemPLxgKBbNeaZDphqI5ATvGbTG0YKHaZA1c3XGTxyOqKOLtjYrccGnnLSjyQDtbI9N+gW2kuaIxNLN6B09XHvh00vIor3DZKJImpuhq8008MES+umNk1ia2C95JFnjDrIwlgkndwci1aGZvt29C2fFIJHtulc/k4mqUk7yQLNZFqYp5tps9P7rEkhaOZuF3Ux4vH1ybUG5jaFTeajXptYIQX6VXGMzMSWJJ8bA9siYbZRQ6rnlnYGIFVVWOpvFv0jaKP5GKpXeTX0n3GGRyqqWNLwMJJ5PicAJw+FuU96PTFFLuKnsD8xN/ICPg1HZmwsdir7Ak/wCLY3l766ZL6oYzfHjAgklVTh0QABtc1MfkylPlYn4YL7fIrFTYzznu+nFYzFzZz//EACARAAIBBAIDAQAAAAAAAAAAAAABEQISICEQUUFhcZH/2gAIAQIBAT8AEaJQnOD9kTtjrLmS5JqHtyb6LV0WrrmMkkv3icKfP3D/xAAlEQABAwIGAQUAAAAAAAAAAAABAAIREiEDECAxUVIEExQyQXH/2gAIAQMBAT8AARyAPCc2DAuVQ7gqVsmgu+IQsS0JnjNABJuqWdGIBsC4lRh8ndMcGNLB9lCkSZkxb9XuMXapetidjmHQRHF8pnQZI4hmrFtRHQaP/9k=" alt="" 
+        style="float: left;width:80px;height: 80px;padding: 5px; " ><span class="icon" style="padding: 10px;padding-bottom: 15px;">Dreaming On <pre style="display: inline;">                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.8299 16.7752C17.336 16.6194 16.7055 16.2134 15.9999 15.507C15.3942 14.914 14.7693 14.1501 14.13 13.3174C13.9765 13.5212 13.8239 13.725 13.6705 13.9327C13.2525 14.4985 12.825 15.0699 12.3895 15.6317C13.911 17.4776 15.4901 19.29 17.8315 19.5889V21.7465L23.8688 18.2623L17.8307 14.7758V16.7752H17.8299ZM7.76583 9.80691C8.36996 10.3983 8.99487 11.1622 9.63576 11.9949C9.79078 11.7855 9.94741 11.5793 10.104 11.3652C10.5215 10.7982 10.9456 10.2361 11.3762 9.67905C9.75243 7.71003 8.07349 5.7578 5.46598 5.6643H2.66908V8.4612H5.46598C5.9894 8.43962 6.81009 8.84877 7.76583 9.80611V9.80691ZM17.8299 8.53392V10.5605L23.868 7.07394L17.8299 3.5874V5.70266C16.3084 5.87846 15.0929 6.77986 14.0341 7.81552C12.2784 9.56078 10.7441 11.9453 9.22981 13.8408C7.73786 15.7883 6.24112 16.947 5.46438 16.8535H2.66748V19.6504H5.46438C7.21044 19.6264 8.56494 18.6387 9.73165 17.4984C11.4849 15.7531 13.0208 13.3694 14.5343 11.4747C15.7674 9.86285 16.9988 8.80562 17.8299 8.53392V8.53392Z" fill="#C4C4C4"/>
+            </svg>  <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.0121 10.1748L13.3783 17.0561L23.0121 23.9373V10.1748ZM13.3783 17.0561V10.1748H10.6258V23.9373H13.3783V17.0561Z" fill="#C4C4C4"/>
+                </svg>  <svg style="position: relative;
+                top: 13px;" width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.192 5.41455C22.7139 5.41455 18.3364 6.74246 14.613 9.23034C10.8896 11.7182 7.9876 15.2544 6.27391 19.3916C4.56023 23.5288 4.11185 28.0812 4.98548 32.4733C5.85911 36.8653 8.01551 40.8997 11.182 44.0661C14.3485 47.2326 18.3828 49.389 22.7748 50.2626C27.1669 51.1363 31.7193 50.6879 35.8566 48.9742C39.9938 47.2605 43.5299 44.3585 46.0178 40.6351C48.5057 36.9117 49.8336 32.5342 49.8336 28.0561C49.8336 25.0828 49.2479 22.1386 48.1101 19.3916C46.9722 16.6446 45.3045 14.1486 43.202 12.0461C41.0995 9.94365 38.6036 8.27588 35.8566 7.13804C33.1096 6.00019 30.1653 5.41455 27.192 5.41455ZM22.7748 35.5145V19.4054L35.1831 28.0561L22.7748 35.5145Z" fill="white"/>
+                    </svg> <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3719 10.1748L21.0056 17.0561L11.3719 23.9373V10.1748ZM21.0056 17.0561V10.1748H23.7581V23.9373H21.0056V17.0561Z" fill="#C4C4C4"/>
+                        </svg>   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.7305 8.15425C19.8664 8.15425 19.9918 8.20113 20.0915 8.27966L20.17 8.3535L20.1899 8.37694C20.8708 9.22087 21.3042 10.2372 21.4419 11.3128C21.5796 12.3884 21.4161 13.4811 20.9697 14.4693C20.5232 15.4576 19.8114 16.3025 18.9133 16.9102C18.0152 17.5179 16.9661 17.8645 15.8827 17.9114L15.6284 17.9161H8.59615C8.4777 17.9162 8.35927 17.9126 8.24102 17.9056L10.1831 19.8453C10.28 19.9424 10.3397 20.0704 10.3519 20.2071C10.3642 20.3437 10.328 20.4803 10.2499 20.5931L10.1831 20.6751C10.086 20.772 9.95795 20.8318 9.82131 20.844C9.68467 20.8562 9.54808 20.82 9.43533 20.7419L9.35329 20.6751L6.4232 17.745C6.3263 17.6479 6.26654 17.5199 6.25434 17.3832C6.24213 17.2466 6.27824 17.11 6.35639 16.9973L6.4232 16.9152L9.35329 13.9851C9.45665 13.8813 9.59515 13.82 9.74149 13.8132C9.88784 13.8064 10.0314 13.8547 10.1439 13.9485C10.2564 14.0424 10.3297 14.1749 10.3493 14.3201C10.3689 14.4653 10.3335 14.6126 10.2499 14.7329L10.1831 14.8149L8.26447 16.7324L8.42855 16.7417L8.59615 16.7441H15.6284C16.5137 16.7442 17.3809 16.4936 18.1298 16.0213C18.8786 15.549 19.4784 14.8743 19.8597 14.0753C20.2411 13.2763 20.3884 12.3857 20.2846 11.5065C20.1809 10.6272 19.8303 9.79537 19.2734 9.10712C19.2046 9.02095 19.1615 8.91711 19.149 8.80755C19.1366 8.69798 19.1553 8.58713 19.2031 8.48773C19.2508 8.38833 19.3256 8.30441 19.4189 8.24563C19.5122 8.18685 19.6202 8.15558 19.7305 8.15542V8.15425ZM14.0414 3.43681C14.1385 3.33992 14.2666 3.28016 14.4032 3.26795C14.5398 3.25574 14.6764 3.29186 14.7892 3.37001L14.8712 3.43681L17.8013 6.3669L17.8681 6.44894C17.9357 6.5468 17.9718 6.6629 17.9718 6.7818C17.9718 6.9007 17.9357 7.0168 17.8681 7.11466L17.8013 7.1967L14.8712 10.1268L14.7892 10.1936C14.6913 10.2611 14.5752 10.2973 14.4563 10.2973C14.3374 10.2973 14.2213 10.2611 14.1235 10.1936L14.0414 10.1268L13.9746 10.0447C13.9071 9.94688 13.8709 9.83079 13.8709 9.71189C13.8709 9.59298 13.9071 9.47689 13.9746 9.37903L14.0414 9.29699L15.96 7.37954L15.796 7.37016L15.6284 7.36782H8.59615C7.71007 7.36776 6.84211 7.61883 6.09288 8.0919C5.34366 8.56498 4.74384 9.2407 4.36295 10.0407C3.98207 10.8408 3.83571 11.7324 3.94085 12.6122C4.04598 13.492 4.39831 14.3241 4.95698 15.0118C5.05039 15.1363 5.09052 15.2928 5.06854 15.4469C5.04656 15.601 4.96427 15.74 4.83978 15.8334C4.77814 15.8797 4.70799 15.9133 4.63334 15.9325C4.55869 15.9516 4.481 15.9559 4.40471 15.945C4.25063 15.923 4.11159 15.8407 4.01818 15.7162C3.34195 14.871 2.91304 13.855 2.77899 12.7809C2.64495 11.7068 2.81103 10.6165 3.2588 9.63105C3.70657 8.64556 4.41854 7.80335 5.31576 7.19781C6.21298 6.59227 7.26038 6.24706 8.34182 6.20047L8.59615 6.19578H15.6284C15.7479 6.19578 15.8663 6.1993 15.9835 6.20633L14.0414 4.26662L13.9746 4.18457C13.8965 4.07182 13.8604 3.93523 13.8726 3.79859C13.8848 3.66195 13.9445 3.53392 14.0414 3.43681V3.43681Z" fill="#C4C4C4"/>
+                            </svg></pre>
+             <br><pre style=" padding: 0;margin:0;display: inline;" > NEFFEX</pre></span><span>💚</span>
+             <pre>                                                   <svg width="674" height="6" viewBox="0 0 674 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="128.997" y="0.32959" width="544.389" height="5.3267" rx="2.66335" fill="#535353"/>
+                <rect x="0.0909805" y="0.32959" width="544.389" height="5.3267" rx="2.66335" fill="#C4C4C4"/>
+                </svg></pre>
+        </footer>
+</body>
+</html>
